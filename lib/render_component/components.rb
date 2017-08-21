@@ -48,7 +48,7 @@ module RenderComponent
             response = component_response(options, true)[2]
             redirect_url = response_redirect(response)
             if redirect_url
-              redirect_to response.redirect_url
+              redirect_to redirect_url
             else
               render :html => response.body.html_safe, :status => response.status
             end
