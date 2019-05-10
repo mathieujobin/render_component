@@ -1,3 +1,5 @@
+**UNMAINTAINED** It doesn't work with rails >= 5.1
+
 Components allow you to call other actions for their rendered response while executing another action. You can either delegate
 the entire response rendering or you can mix a partial response in with your other content.
 
