@@ -9,7 +9,8 @@ module RenderComponent
         end
       end
 
-      def flash(refresh = false) #:nodoc:
+      # broken, flash never disappear
+      def ___flash(refresh = false) #:nodoc:
         if @component_flash.nil? || refresh
           @component_flash =
             if parent_controller&.flash.is_a?(ActionDispatch::Flash::FlashHash)
