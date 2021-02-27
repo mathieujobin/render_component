@@ -37,7 +37,7 @@ jobs:
           ruby: 3.0
 
     env:
-      BUNDLE_GEMFILE: /home/runner/work/render_component/render_component/gemfiles/${{ matrix.gemfile }}.x
+      BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.x
     steps:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
